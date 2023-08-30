@@ -1,0 +1,1494 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    background-image: url(estrada2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+@media only screen and (min-width:00px)
+{
+
+:target
+{
+    scroll-margin-top: 80px;
+}
+body img
+{
+    width: 450px;
+    height: 600px;
+}
+
+/* referente ao HEADER*/
+header
+{
+    background-color: black;
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    
+}
+.menu2
+{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.logo img
+{
+    margin-left: 10%;
+    width: 25%;
+    height: 11%;
+    position: fixed;
+    z-index: 100;
+}
+/*
+section div
+{
+    position: fixed;
+}
+*/
+.partela
+{
+    /*position: absolut;*/
+    width: 253px;
+    height: 69px;
+    background: #FF8200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px 0px 0px 0px;
+}
+
+.partebr
+{
+    position: absolute;
+    width: 253px;
+    height: 255px;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+}
+
+/* Daqui até o final é configuração do menu hambuguer*/
+#menu
+{
+    z-index: 2;
+    margin-left: 70%; 
+    margin-top: 3%;
+}
+ 
+#menu-bar
+{
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar
+{
+    height: 5px;
+    width: 100%;
+    background-color: #ff8200;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+ 
+#bar1
+{
+    transform: translateY(-4px);
+}
+ 
+#bar3
+{
+    transform: translateY(4px);
+}
+ 
+.nav
+{
+    transition: 0.3s ease;
+    display: none;
+}
+ 
+.nav ul
+{
+    padding: 0 22px;
+}
+ 
+.nav li
+{
+    list-style: none;
+    padding: 12px 0;
+    margin-left: 10%;
+}
+ 
+.nav li a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+ 
+.nav li a:hover
+{
+    font-weight: bold;
+}
+ 
+.menu-bg, #menu
+{
+    position: absolute;
+}
+ 
+.menu-bg
+{
+    z-index: 1;
+    margin: 30px 0 20px 20px;
+    margin-left: 120%; /* aqui */
+    background: radial-gradient(circle, #ff8200, #ff8200);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    border: solid 1.5px #000;
+}
+.change
+{
+    display: block;
+}
+ 
+.change .bar
+{
+    background-color: rgb(255, 255, 255);
+}
+ 
+.change #bar1
+{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+ 
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3
+{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+ 
+.change-bg
+{
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+/* daqui para baixo é o primeiro carrosel*/
+.pacotesC
+{
+    display: inline-flex;
+    margin-bottom: 0%;
+    visibility: hidden;
+}
+.pacotesC img
+{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 140px;
+    margin-left: 10%;
+    visibility: hidden;
+}
+#carrossel img
+{
+    height:200px;
+    width:70%;
+    margin-left: 27%;
+    border-radius:5px;
+    box-shadow:2px 4px 2px rgb(100,100,100);
+    visibility: visible;
+    margin-top: -160%;
+}
+
+#carrossel
+{
+    height:300px;
+    width:80%;
+    left:0%;
+    right:0%;
+    
+}
+.ante
+{
+    left:4%;
+}
+
+.prox
+{
+    right:7%;
+    
+}
+.ante, .prox
+{  
+    top: 34%;
+    font-weight:bold;
+    font-size:4vw;
+    text-align:center;
+    width:5%;
+    background-color:rgba(100,100,100,0.7);
+    position: absolute;
+    border-radius: 14px;
+    height: 30px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+}
+
+.ante:hover, .prox:hover
+{
+    background-image: linear-gradient(to bottom, #ff8200, #ee0000);
+    cursor:pointer;
+    /* background-color: #ff8200; */
+}
+/* Daqui para baixo é referente ao pacote de assinaturas*/
+.assign img
+{
+    margin-left: 11%;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 200px;
+    width: 80%;
+    margin-top: -70%;
+    z-index: 101;
+}
+/* Daqui para baixo fica o fundo laranja da segunda parte do site*/
+
+/*CSS dos produtos*/
+.quadro
+{
+    width:74vw;
+    height:29vh;
+    background-color: #000;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 5%;
+}
+
+.quadro img
+{
+    width:66vw;
+    height:20vh;
+    margin-left:5%;
+    margin-top:5%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+    display: inline-table;
+}
+
+.quadro ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:5%;
+    color: #FFFFFF;
+}
+.quadro li
+{
+    background-color: #FF8200;
+    box-shadow: #000 ;
+    width: 94%;
+    height: 20px;
+    margin-bottom: 2px;
+    border-radius: 14px 0px 14px 14px;
+    text-align: center;
+}
+.quadro li:hover
+{
+    cursor: pointer;
+    background-color: #d87000e1;
+}
+
+.parte2
+{
+    /*position: absolute;*/
+    width: 100%;
+    height: 60vh;
+    background: #FF8200;
+    margin-top: 10px;
+}
+.partebrancaint
+{
+    width: 84%;
+    height: 56vh;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+    margin-left: 7%;
+    margin-top: 10px;
+    display: inline-table;
+}
+.partecinza1
+{
+    /*position: absolute;*/
+    width: 93px;
+    height: 19px;
+    background: #989898;
+    border-radius: 14px;
+}
+.quadro2
+{
+    width:74vw;
+    height:24vh;
+    background-color: #000;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 4px;
+    display: inline-flex;
+}
+.quadro2 h4
+{
+    color: #fff;
+    width:28vw;
+    margin-top: 15%;
+    background-color: #ff8200;
+    height: 15vh;
+    border-radius: 14px 14px 14px 14px;
+    text-align: center;
+    margin-left: 7%;
+    padding-top: 9%;
+}
+.quadro2 img
+{
+    width:68vw;
+    height:21vh;
+    margin-left:3.5%;
+    margin-top:4%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+    border: #000 solid 1px;
+}
+.quadro2 ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:18%;
+    color: #FFFFFF;    
+}
+.quadro2 ul li:hover
+{
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+/* Daqui para baixo é referente a terceira parte do site*/
+
+.parte3
+{
+    width: 100%;
+    height: 250px;
+    background-image: url(backparte3.jpg);
+}
+
+.partelaranjaint
+{
+    background-color: #FF8200;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    width: 87%;
+    height: 55%;
+    margin-top: 30px;
+}
+.ondeEstamos
+{
+    color:white;
+    margin-left: 18px;
+    padding-top: 40px;
+}
+.carousel img
+{
+    height: 30%;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 14px 0px 14px 14px;
+}
+.carousel img:hover
+{
+    transform: scale(1.2);
+    width: 30%;
+    transition: 0.5s 0.2s all ease;
+}
+
+.parte4
+{
+    width: 100%;
+    height: 480px;
+    background-image: url(fundobrancopreto.jpg);
+    display: inline-block;
+}
+.texto4
+{
+    color: #000;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.risquinho
+{
+    text-decoration: underline;
+}
+.texto4 p
+{
+    width: 80%;
+    margin-top: 20px;
+}
+footer
+{
+    display: inline-flex;
+    background-image: url(fundopretobranco.jpg);
+    width: 100%;
+    height: 48vh;
+}
+footer img
+{
+    width: 31%;
+    height: 50%;
+    margin-left: 9%;
+    margin-top: 17%;
+    border-radius: 14px;
+}
+footer a img
+{
+    width: 8vw;
+    height: 6vh;
+    margin-left: 5vw;
+    margin-top: 42%;
+    border-radius: 14px 0px 14px 14px;
+}
+footer p{
+    color:gray; 
+    margin-top: 53%; 
+    margin-left: -71%;
+}
+footer h2
+{
+    position: absolute;
+    color: #ff8200;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.titleredes
+{
+    margin-left: 52%;
+}
+.barraFooter
+{
+    width: 2vw;
+    height: 29vh;
+    background-color: #1a1a1a;
+    margin-top: 11%;
+    margin-left: 4%;
+    border-radius: 14px;
+}
+}
+@media only screen and (min-width: 820px) /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+{
+:target
+{
+    scroll-margin-top: 170px;
+}
+body img
+{
+    width: 450px;
+    height: 600px;
+}
+
+/* referente ao HEADER*/
+header
+{
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    z-index: 99;
+}
+.menu2
+{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.logo img
+{
+    margin-left: 10%;
+    width: 25%;
+    height: 15%;
+    position: fixed;
+    z-index: 100;
+}
+/*
+section div
+{
+    position: fixed;
+}
+*/
+.partela
+{
+    position: absolute;
+    width: 253px;
+    height: 69px;
+    background: #FF8200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px 0px 0px 0px;
+}
+
+.partebr
+{
+    position: absolute;
+    width: 253px;
+    height: 255px;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+}
+
+/* Daqui até o final é configuração do menu hambuguer*/
+#menu
+{
+    z-index: 2;
+    margin-left: 75%; /*aqui*/
+    padding-top: 30px;
+}
+ 
+#menu-bar
+{
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar
+{
+    height: 5px;
+    width: 100%;
+    background-color: #ff8200;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+ 
+#bar1
+{
+    transform: translateY(-4px);
+}
+ 
+#bar3
+{
+    transform: translateY(4px);
+}
+ 
+.nav
+{
+    transition: 0.3s ease;
+    display: none;
+}
+ 
+.nav ul
+{
+    padding-left: 22px;
+}
+ 
+.nav li
+{
+    list-style: none;
+    padding: 12px 0;
+}
+ 
+.nav li a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+ 
+.nav li a:hover
+{
+    font-weight: bold;
+}
+ 
+.menu-bg, #menu
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+ 
+.menu-bg
+{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    margin-left:100%; /* aqui */
+    background: radial-gradient(circle, #ff8200, #ff8200);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    border: solid 1.5px #000;
+}
+ 
+.change
+{
+    display: block;
+}
+ 
+.change .bar
+{
+    background-color: white;
+   
+}
+ 
+.change #bar1
+{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+ 
+.change #bar2 {
+    opacity: 0;
+}
+  /*to mexendo aqui burro*/
+.change #bar3
+{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+ 
+.change-bg
+{
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+/* daqui para baixo é o primeiro carrosel*/
+.pacotesC
+    {
+        display: inline-flex;
+        margin-bottom: 0%;
+        visibility: hidden;
+
+    }
+    .pacotesC img
+    {
+        width: 30vw;
+        height: 30vh;
+        margin-top: 140px;
+        margin-left: 10%;
+        visibility: hidden;
+    }
+#carrossel img
+{
+  height:90%;
+  width:70%;
+  margin-left: 25%;
+  border-radius:5px;
+  box-shadow:2px 4px 2px rgb(100,100,100);
+  margin-top: -30%;
+  visibility: visible;
+}
+
+
+.ante
+{
+    left:7%;
+}
+
+.prox
+{
+    right:12%;
+   
+}
+.ante, .prox
+{  
+    top: 35%;
+    font-weight:bold;
+    font-size:4vw;
+    text-align:center;
+    width:5%;
+    background-color:rgba(100,100,100,0.7);
+    justify-content: center;
+    border-radius: 14px;
+    height: 30px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+ 
+}
+
+.ante:hover, .prox:hover
+{
+    background-color:rgba(255,130,00,0.7);
+    cursor:pointer;
+}
+/* Daqui para baixo é referente ao pacote de assinaturas*/
+.assign img
+{
+    margin-left: 12%;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 25vh;
+    width: 75%;
+    margin-top: -17%;
+}
+/* Daqui para baixo fica o fundo laranja da segunda parte do site*/
+
+/*CSS dos produtos*/
+.quadro
+{
+    width:75vw;
+    height:30vh;
+    background-color: #000;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 3%;
+}
+
+.quadro img
+{
+    width:68vw;
+    height:20vh;
+    margin-left:5%;
+    margin-top:5%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+    display: inline-table;
+}
+
+.quadro ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:5%;
+    color: #FFFFFF;
+    
+}
+.quadro li
+{
+    background-color: #FF8200;
+    box-shadow: #000 ;
+    width: 96%;
+    height: 2vh;
+    margin-bottom: 2px;
+    border-radius: 14px 0px 14px 14px;
+    text-align: center;
+}
+.quadro li:hover
+{
+    cursor: pointer;
+    background-color: #d87000e1;
+}
+.quadro ul li:hover
+{
+    /*font-weight: bold;*/
+    text-decoration:underline;
+}
+
+.parte2
+{
+    /*position: absolute;*/
+    width: 100%;
+    height: 70vh;
+    background: #FF8200;
+    margin-top: 10px;
+}
+.partebrancaint
+{
+    width: 83%;
+    height: 67vh;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+    margin-left: 7%;
+    margin-top: 10px;
+    display: inline-table;
+}
+
+.quadro2
+{
+    width:75vw;
+    height:33vh;
+    background-color: #000;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 4px;
+    display: inline-flex;
+}
+.quadro2 h4
+{
+    color: #fff;
+    width:28vw;
+    margin-top: 6%;
+    background-color: #ff8200;
+    height: 15vh;
+    border-radius: 14px 14px 14px 14px;
+    text-align: center;
+    margin-left: 7%;
+    padding-top: 6%;
+}
+.quadro2 img
+{
+    width:67vw;
+    height:30vh;
+    margin-left:3.5%;
+    margin-top:2.5%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+}
+.quadro2 ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:18%;
+    color: #FFFFFF;    
+}
+.quadro2 ul li:hover
+{
+    font-weight: bold;
+    text-decoration:underline;
+}
+/* Daqui para baixo é referente a terceira parte do site*/
+
+.parte3
+{
+    width: 100%;
+    height: 37vh;
+    background-image: url(backparte3.jpg);
+}
+
+.partelaranjaint
+{
+    background-color: #FF8200;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    width: 87%;
+    height: 23vh;
+}
+.ondeEstamos
+{
+    margin-left: 8%;
+    font-size: 30px;
+}
+
+.carousel img
+{
+    height: 21vh;
+    width: 25vw;
+    margin-left: 2%;
+    margin-top: 1.3%;
+    transform: none;
+    transition: none;
+}
+/* .carousel img:hover
+{
+    transform: scale(1.2);
+    width: 30%;
+    transition: 40000000000000000000000000000000000000s 0.2s all ease;
+} */
+.parte4
+{
+    width: 100%;
+    height: 30vh;
+    background-image: url(fundobrancopreto.jpg);
+    display: inline-block;
+}
+.texto4
+{
+    color: #000;
+    margin-top: 9%;
+    margin-left:10%;
+}
+.risquinho
+{
+    text-decoration: underline;
+}
+.texto4 p
+{
+    width: 84%;
+    margin-top: 20px;
+    font-size: 100%;
+    color: black;
+    font-weight: bold;
+}
+footer
+{
+    display: inline-flex;
+    background-image: url(fundopretobranco.jpg);
+    width: 100%;
+    height: 290px;
+}
+footer img
+{
+    width: 32%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 9%;
+}
+.cinza
+{
+    background-color: #989898;
+    width: 15px;
+    height: 40px;
+    margin-top: 35%;
+    margin-left: 300%;
+}
+.redessociais2
+{
+    width: 1%;
+    height: 1%;
+    display: inline-flex;
+}
+footer a img
+{
+    width: 7vw;
+    height: 6vh;
+    margin-left: 5vw;
+    margin-top: 27%;
+}
+footer p 
+{
+    margin-top: 32%;
+    margin-left: -60%;
+    font-size: 20px;
+}
+footer h2
+{
+    margin-top: 40px;
+    margin-left: 10vw;
+}
+.titleredes
+{
+    margin-left: 53%;
+    /* text-decoration: underline; */
+}
+.barraFooter
+{
+    width: 2vw;
+    height: 18vh;
+    background-color: #1a1a1a;
+    margin-top: 5%;
+    margin-left: 4%;
+    border-radius: 14px;
+}
+}
+@media only screen and (min-width: 1100px)
+{
+:target
+{
+    scroll-margin-top: 100px;
+}
+body img
+{
+    width: 450px;
+    height: 600px;
+}
+
+/* referente ao HEADER*/
+header
+{
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+}
+.menu2 
+{
+    margin-left: 60vw;
+    color:#fff;
+    margin-top: 4%;
+    position: fixed;
+    visibility: visible;
+    width: 40vw;
+}
+.menu2 ul li
+{
+    display: inline;
+}
+
+.menu2 a
+{
+    margin-left: 4vw;
+    color: #fff;
+}
+.menu2 a:hover
+{
+    color: #FF8200;
+    transition: 300ms;
+}
+.logo img
+{
+    margin-left: 10%;
+    width: 16%;
+    height: 15%;
+    position: fixed;
+    
+}
+/*
+section div
+{
+    position: fixed;
+}
+*/
+.partela
+{
+    position: absolute;
+    width: 253px;
+    height: 69px;
+    background: #FF8200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px 0px 0px 0px;
+}
+
+.partebr
+{
+    position: absolute;
+    width: 253px;
+    height: 255px;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+}
+
+/* Daqui até o final é configuração do menu hambuguer*/
+#menu
+{
+    visibility: hidden;
+    z-index: 2;
+    margin-left: 87%; /*aqui*/
+}
+    
+#menu-bar
+{
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar
+{
+    height: 5px;
+    width: 100%;
+    background-color: #ff8200;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+    
+#bar1
+{
+    transform: translateY(-4px);
+}
+    
+#bar3
+{
+    transform: translateY(4px);
+}
+    
+.nav
+{
+    transition: 0.3s ease;
+    display: none;
+}
+    
+.nav ul
+{
+    padding: 0 22px;
+}
+    
+.nav li
+{
+    list-style: none;
+    padding: 12px 0;
+}
+    
+.nav li a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+    
+.nav li a:hover
+{
+    font-weight: bold;
+}
+    
+.menu-bg, #menu
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+    
+.menu-bg
+{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    margin-left: 120%; /* aqui */
+    background: radial-gradient(circle, #ff8200, #ff8200);
+    border-radius: 50%;
+    transition: 0.3s ease;
+    border: solid 1.5px #000;
+}
+    
+.change
+{
+    display: block;
+}
+    
+.change .bar
+{
+    background-color: white;
+}
+    
+.change #bar1
+{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+    
+.change #bar2 {
+    opacity: 0;
+}
+    /*to mexendo aqui burro*/
+.change #bar3
+{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+    
+.change-bg
+{
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+/* daqui para baixo é o primeiro carrosel*/
+.pacotesC
+{
+    display: inline-flex;
+    visibility: visible;
+}
+.pacotesC img
+{
+    width: 25vw;
+    height: 30vh;
+    margin-top: 120px;
+    margin-left: 38%;
+    visibility: visible;
+    border-radius: 14px 0px 14px 14px;
+}
+
+#carrossel img
+{
+    height:80%;
+    width:70%;
+    margin-left: 27%;
+    border-radius:5px;
+    box-shadow:2px 4px 2px rgb(100,100,100);
+    margin-top: 23%;
+    visibility: hidden;
+}
+
+#carrossel
+{
+    height:0px;
+    width:80%;
+    left:0%;
+    right:0%;
+    visibility: hidden;
+}
+.ante
+{
+    left:7%;
+}
+
+.prox
+{
+    right:7%;
+    
+}
+.ante, .prox
+{  
+    top: 35%;
+    font-weight:bold;
+    font-size:4vw;
+    text-align:center;
+    width:5%;
+    background-color:rgba(100,100,100,0.7);
+    justify-content: center;
+    border-radius: 14px;
+    height: 30px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    position:absolute;
+    visibility: hidden;
+}
+
+.ante:hover, .prox:hover
+{
+    background-color:rgba(255,130,00,0.7);
+    cursor:pointer;
+}
+/* Daqui para baixo é referente ao pacote de assinaturas*/
+.assign img
+{
+    margin-left: 24%;
+    border-radius: 14px 0px 14px 14px;
+    height: 40vh;
+    width: 50vw;
+    margin-top: 3%;
+}
+/* Daqui para baixo fica o fundo laranja da segunda parte do site*/
+
+/*CSS dos produtos*/
+.quadro
+{
+    width:35vw;
+    height:32vh;
+    background-image: url(quadro-bike.jpg);
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 10px;
+}
+
+.quadro img
+{
+    width:31vw;
+    height:19vh;
+    margin-left:5%;
+    margin-top:3%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+    display: inline-table;
+}
+
+.quadro ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:5%;
+    color: #FFFFFF;
+    
+}
+.quadro li
+{
+    background-color: #FF8200;
+    box-shadow: #000 ;
+    width: 31vw;
+    height: 22px;
+    margin-bottom: 2px;
+    border-radius: 14px 0px 14px 14px;
+    text-align: center;
+}
+.quadro li:hover
+{
+    cursor: pointer;
+    background-color: #d87000e1;
+}
+.quadro ul li:hover
+{
+    /*font-weight: bold;*/
+    text-decoration:underline;
+}
+
+.parte2
+{
+    /*position: absolute;*/
+    width: 100%;
+    height: 40vh;
+    background: #FF8200;
+    margin-top: 10px;
+    display: flex;
+}
+.partebrancaint
+{
+    width: 87%;
+    height: 36vh;
+    background: #FFFFFF;
+    border-radius: 14px 0px 14px 14px;
+    margin-left: 7%;
+    margin-top: 10px;
+    display: inline-flex;
+}
+.partecinza1
+{
+    width: 93px;
+    height: 19px;
+    background: #989898;
+    border-radius: 14px;
+}
+.quadro2
+{
+    width:35vw;
+    height:32vh;
+    background-color: #000;
+    margin-left: 9%;
+    border-radius: 14px 0px 14px 14px;
+    margin-top: 10px;
+    /* display: inline-flex; */
+    display: flex;
+ 
+}
+.quadro2 h4
+{
+    color: #fff;
+    width:23vw;
+    margin-top: 15%;
+    background-color: #ff84008f;
+    height: 10vh;
+    border-radius: 9px 0px 14px 14px;
+    text-align: center;
+    padding: 1rem;
+}
+.quadro2 img
+{
+    width:30vw;
+    height:28vh;
+    margin-left:3.5%;
+    margin-top:2.5%;
+    background-color: #989898;
+    border-radius: 14px 0px 14px 14px;
+}
+.quadro2 ul
+{
+    list-style:none;
+    cursor:pointer;
+    margin-left:18%;
+    color: #FFFFFF;    
+}
+.quadro2 ul li:hover
+{
+    font-weight: bold;
+    text-decoration:underline;
+}
+/* Daqui para baixo é referente a terceira parte do site*/
+
+.parte3
+{
+    width: 100vw;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.partelaranjaint
+{
+    background-color: #FF8200;
+    margin-left: 5%;
+    border-radius: 14px 0px 14px 14px;
+    width: 90%;
+    height: 30vh;
+}
+
+.carousel img
+{
+    height: 24vh;
+    width: 20vw;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+.carousel img:hover
+{
+    transform: scale(1.2);
+    width: 30%;
+    transition: 40000000000000000000000000000000000000s 0.2s all ease;
+} 
+.parte4
+{
+    width: 100%;
+    height: 50vh;
+    background-image: url(fundobrancopreto.jpg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.texto4
+{
+    color: #000;
+    margin-top: 6%;
+    margin-left:10%;
+}
+.risquinho
+{
+    text-decoration: underline;
+}
+.texto4 p
+{
+    width: 80%;
+    margin-top: 20px;
+}
+footer
+{
+    display: inline-flex;
+    background-color: #000;
+    width: 100%;
+    height: 51vh;
+    background-repeat: no-repeat;
+}
+footer img
+{
+    width: 25%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 14px;
+}
+.alinhamento
+{
+    display: inline-block;
+    margin-top: 5%;
+}
+.redessociais2 a img
+{
+    display: inline-table;
+    margin-left: 10vw;
+}
+footer a img
+{
+    width: 5vw;
+    height: 7vh;
+    margin-left: 5vw;
+    margin-top: 20%;
+    border-radius: 14px 0px 14px 14px;
+}
+.doca a
+{
+    background-color: gray;
+    width: 60px;
+    color: #fff;
+    border: solid 8px gray;
+    border-radius: 14px 0px 14px 14px;
+}
+footer p{
+    margin-top: 22%;
+    margin-left: -43%;
+    border-top: #1a1a1a solid;
+}
+.barraFooter{
+    margin-top: 3%;
+    height: 37vh;
+    width: 1vw;
+    margin-left: 12%;
+}
+.titleredes
+{
+    margin-left: 53%;
+}
+
+}
